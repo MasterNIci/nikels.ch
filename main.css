@@ -1,0 +1,65 @@
+body{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #00c7ff;
+  font-family: arial;
+  z-index: 1;
+}
+
+nav{
+  z-index: 0;
+  text-align: center;
+  position: fixed;
+  top:0;
+  left: 5%;
+  right: 5%;
+}
+
+li{
+  list-style: none;
+  float: left;
+  margin: 1vw;
+}
+
+master{
+  top:5vw;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  background-color: white;
+  z-index: 3;
+}
+
+div{
+
+}
+
+a {
+
+}
+
+p{
+
+}
+
+/* Klassen */
+.allinfobox{
+  display: none;
+}
+
+.hideallinfo{
+  display: none;
+}
+
+.text1{
+
+}
+
+.text2{
+
+}
