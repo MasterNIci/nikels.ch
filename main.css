@@ -16,23 +16,40 @@ nav{
   text-align: center;
   position: fixed;
   top:0;
-  left: 5%;
-  right: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+
 }
 
 li{
   list-style: none;
   float: left;
   margin: 1vw;
+  margin-top: 1.3vw;
+}
+
+.gotop{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-color: black;
+  border: 1%;
+  border-style: solid;
+  background-color: white;
 }
 
 master{
   top:5vw;
   position: absolute;
-  left: 10%;
-  right: 10%;
+  left: 15%;
+  right: 15%;
   background-color: white;
   z-index: 3;
+  border-color: black;
+  border: 1%;
+  border-style: solid;
 }
 
 div{
@@ -40,11 +57,31 @@ div{
 }
 
 a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+  margin: 0.1vw;
+  padding: 1vw;
+  border-color: black;
+  border: 1%;
+  border-style: solid;
+}
 
+a:hover{
+  background-color: black;
+  color: white;
+  border-color: white;
+  border: 1%;
+  border-style: solid;
+}
+
+h1{
+  margin: 1vw;
 }
 
 p{
-
+  margin: 2vw;
 }
 
 /* Klassen */
@@ -56,10 +93,10 @@ p{
   display: none;
 }
 
-.text1{
+.text:nth-child(1){
 
 }
 
-.text2{
+.text:nth-child(2){
 
 }
