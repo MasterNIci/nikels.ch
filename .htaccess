@@ -1,10 +1,9 @@
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} !^www.nikels.ch/Home$
 RewriteCond %{HTTP_HOST} !^www.nikels.ch$
 RewriteCond %{HTTP_HOST} !^nikels.ch$
 RewriteCond %{HTTP_HOST} !^nikels.ch/index.html$
-RewriteRule ^(.*)$ https://www.nikels.ch/Home$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.nikels.ch$1 [R=301,L]
 
 # add .php to access file, but don't redirect
 RewriteCond %{REQUEST_FILENAME}.html -f
