@@ -162,6 +162,7 @@ nici{
 .imganimation:hover{
   animation-name: herum;
   animation-duration: 2s;
+  animation-delay: 0.3s;
   animation-iteration-count: 1;
 }
 
