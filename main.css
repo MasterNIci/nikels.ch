@@ -83,11 +83,12 @@ a:hover{
 }
 
 h1{
-  margin: 1vw;
+  margin: 20px;
+
 }
 
 h2{
-  margin: 1vw;
+  margin: 20px;
 }
 
 p{
@@ -112,6 +113,8 @@ p{
 }
 
 .masterfooter{
+  border-top: 5px;
+  border-top-style: solid;
   display: inline-block;
   left: 0;
   right: 0;
@@ -130,6 +133,9 @@ nici{
   margin-left: 10px;
   margin-right: 10px;
   display: inline-block;
+  font-family: arial black;
+  color: white;
+  font-weight: 600;
 }
 
 .logo{
@@ -167,8 +173,6 @@ nici{
   animation-iteration-count: 1;
 }
 
-
-
 @keyframes herum {
  0%{
    transform: rotateY(0deg);
@@ -179,4 +183,20 @@ nici{
  100%{
    transform: rotateY(360deg);
  }
+}
+
+nicolabuehlerbild{
+  float: left;
+}
+gaming{
+  display: inline-block;
+}
+iframe{
+  margin-left: 20px;
+}
+
+.textlink{
+
+  margin: 15px;
+
 }
