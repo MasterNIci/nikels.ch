@@ -186,7 +186,7 @@ nici{
 }
 
 nicolabuehlerbild{
-  float: left;
+ position: absolute;
 }
 gaming{
   display: inline-block;
@@ -199,4 +199,23 @@ iframe{
 
   margin: 15px;
 
+}
+
+.nicidasbild{
+  border-radius: 30%;
+  float: left;
+  left: 10px;
+  margin-left:  10px;
+  margin-right: 10px;
+
+
+}
+
+.namesholder{
+  display: inline-block;
+  width: 50%;
+  background-color: grey;
+  right: 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #5ffdff;
 }
