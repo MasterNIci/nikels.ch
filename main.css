@@ -85,6 +85,10 @@ h1{
   margin: 1vw;
 }
 
+h2{
+  margin: 1vw;
+}
+
 p{
   margin: 2vw;
 }
@@ -111,17 +115,66 @@ p{
   left: 0;
   right: 0;
   background-color: grey;
-  height: 5vw;
+  height: 150px;
   width: 100%;
   text-align: center;
 
 }
 span{
- margin-top: 10px;
+ margin-top: 40px;
  display: inline-block;
+
 }
 nici{
   margin-left: 10px;
   margin-right: 10px;
   display: inline-block;
+}
+
+.logo{
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logolink{
+  text-decoration: none;
+  border-style: none;
+  background-color: none;
+
+}
+.logolink:hover{
+  background-color: grey;
+  border-style: none;
+
+}
+
+.imganimation{
+  height: 50px;
+  width: 50px;
+
+}
+
+.imganimation:hover{
+  animation-name: herum;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+
+
+@keyframes herum {
+ 0%{
+   transform: rotateY(0deg);
+ }
+ 50%{
+   transform: rotateY(180deg);
+ }
+ 100%{
+   transform: rotateY(360deg);
+ }
 }
