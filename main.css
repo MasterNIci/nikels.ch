@@ -105,3 +105,23 @@ p{
 .text:nth-child(2){
 
 }
+
+.masterfooter{
+  display: inline-block;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  height: 5vw;
+  width: 100%;
+  text-align: center;
+
+}
+span{
+ margin-top: 10px;
+ display: inline-block;
+}
+nici{
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
