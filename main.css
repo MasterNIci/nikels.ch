@@ -74,6 +74,7 @@ a {
 }
 
 a:hover{
+  transition-delay:0.1s;
   background-color: black;
   color: white;
   border-color: white;
