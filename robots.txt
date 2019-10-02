@@ -8,4 +8,4 @@ Disallow: /quellen/dtd/
 
 User-agent: *
 Disallow: /fonts/
-Disallow: /bilder/
+
