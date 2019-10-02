@@ -151,7 +151,8 @@ nici{
 .logolink{
   text-decoration: none;
   border-style: none;
-  background-color: none;
+  height: 0px;
+  width: 0px;
 
 }
 .logolink:hover{
