@@ -267,6 +267,15 @@ iframe{
     margin-top: 56px;
   }
 
+  .logo{
+    width: 195px;
+
+  }
+
+  span{
+    width: 100%;
+    display: inline-block;
+  }
 
 }
 
