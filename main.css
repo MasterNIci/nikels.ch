@@ -220,3 +220,57 @@ iframe{
   border-radius: 15px;
   box-shadow: 0 0 10px #5ffdff;
 }
+/**************************/
+/* Die Aufläsungen        */
+/**************************/
+
+@media (max-width: 320px) {
+
+}
+
+@media (min-width: 321px ) and (max-width: 375px) {
+
+}
+
+@media (min-width: 376px ) and (max-width: 425px) {
+
+}
+
+@media (min-width: 426px ) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px ) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px ) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1441px ) and (max-width: 2560px) {
+
+  h1{
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+  a{
+    font-size: 25px;
+    padding: 25px;
+  }
+  li{
+    margin: 40px;
+    margin-top: 56px;
+  }
+
+
+}
+
+
+@media (min-width: 2561px ) {
+
+}
