@@ -269,13 +269,28 @@ iframe{
 
   .logo{
     width: 195px;
-
+    height: 100px;
   }
+
+  .imganimation {
+      height: 100px;
+      width: 100px;
+    }
+
+.masterfooter {
+    height: 200px;
+}
 
   span{
     width: 100%;
     display: inline-block;
+    margin-top: 35px;
   }
+
+  nici{
+    font-size: 25px;
+  }
+
 
 }
 
