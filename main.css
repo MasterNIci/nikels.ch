@@ -68,8 +68,7 @@ a{
 
 a:hover{
   color: black;
-  
-  text-decoration: underline;
+
 }
 
 .amenu {
@@ -236,7 +235,7 @@ iframe{
     height: auto;
     background-color: black;
     padding-left: 40px;
-    padding-right: 50px;
+    padding-right: 100px;
 }
 
 
