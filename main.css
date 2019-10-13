@@ -61,7 +61,18 @@ section{
   width: 100%;
 }
 
-a {
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.amenu {
   font-size: 20px;
   text-decoration: none;
   background-color: grey;
@@ -73,7 +84,7 @@ a {
   border-style: solid;
 }
 
-a:hover{
+.amenu:hover{
   transition-delay:0.1s;
   background-color: black;
   color: white;
@@ -220,6 +231,18 @@ iframe{
   border-radius: 15px;
   box-shadow: 0 0 10px #5ffdff;
 }
+
+.ts3{
+    height: auto;
+    background-color: black;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+
+
+
+
 /**************************/
 /* Die Aufläsungen        */
 /**************************/
@@ -258,7 +281,7 @@ iframe{
   p{
     font-size: 25px;
   }
-  a{
+  .amenu{
     font-size: 25px;
     padding: 25px;
   }
