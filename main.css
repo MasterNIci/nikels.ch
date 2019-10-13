@@ -87,6 +87,7 @@ a:hover{
   transition-delay:0.1s;
   background-color: black;
   color: white;
+  text-decoration: none;
   border-color: white;
   border: 1%;
   border-style: solid;
