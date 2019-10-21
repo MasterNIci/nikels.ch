@@ -50,6 +50,7 @@ master{
   border-color: black;
   border: 1%;
   border-style: solid;
+  border-radius: 18px;
 }
 
 div{
