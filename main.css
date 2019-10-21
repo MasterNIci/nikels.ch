@@ -8,11 +8,11 @@ body{
   padding: 0;
   background-color: #00c7ff;
   font-family: arial;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav{
-  z-index: 0;
+  z-index: 1;
   text-align: center;
   position: fixed;
   top:0;
@@ -46,7 +46,7 @@ master{
   left: 15%;
   right: 15%;
   background-color: white;
-  z-index: 3;
+  z-index: 4;
   border-color: black;
   border: 1%;
   border-style: solid;
@@ -72,6 +72,7 @@ a:hover{
 }
 
 .amenu {
+  z-index: 1;
   font-size: 20px;
   text-decoration: none;
   background-color: grey;
@@ -243,8 +244,86 @@ iframe{
   text-decoration: underline;
 }
 
+.pixelback{
+  width: 100%;
+  height: 600vh;
+  overflow: hidden;
+  background-color: #111;
+  z-index: 0;
+}
 
+.pixelback .pixelbox{
+  position: relative;
+  width: 96px;
+  height: 96px;
+  background-color: #111;
+  float: left;
+  border: 1px solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+}
 
+.pixelback .pixelbox:before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #1d1d1d;
+  box-shadow: 0 1px 4px #000;
+  transition: 2s ease-in-out;
+}
+.pixelback .pixelbox:hover:before{
+    transition: 0s ease-in-out;
+}
+
+.pixelback .pixelbox:nth-child(9n+1):hover:before{
+  background-color: #f00;
+  box-shadow: 0 0 3px #f00,
+              0 0 10px #f00;
+}
+.pixelback .pixelbox:nth-child(9n+2):hover:before{
+  background-color: #0f0;
+  box-shadow: 0 0 3px #0f0,
+              0 0 10px #0f0;
+}
+.pixelback .pixelbox:nth-child(9n+3):hover:before{
+  background-color: #00f;
+  box-shadow: 0 0 3px #00f,
+              0 0 10px #00f;
+}
+.pixelback .pixelbox:nth-child(9n+4):hover:before{
+  background-color: #ff0;
+  box-shadow: 0 0 3px #ff0,
+              0 0 10px #ff0;
+}
+.pixelback .pixelbox:nth-child(9n+5):hover:before{
+  background-color: #0ff;
+  box-shadow: 0 0 3px #0ff,
+              0 0 10px #0ff;
+}
+.pixelback .pixelbox:nth-child(9n+6):hover:before{
+  background-color: #f0f;
+  box-shadow: 0 0 3px #f0f,
+              0 0 10px #f0f;
+}
+.pixelback .pixelbox:nth-child(9n+7):hover:before{
+  background-color: #e91e63;
+  box-shadow: 0 0 3px #e91e63,
+              0 0 10px #e91e63;
+}
+.pixelback .pixelbox:nth-child(9n+8):hover:before{
+  background-color: #00ffad;
+  box-shadow: 0 0 3px #00ffad,
+              0 0 10px #00ffad;
+}
+.pixelback .pixelbox:nth-child(9n+9):hover:before{
+  background-color: #f45103;
+  box-shadow: 0 0 3px #f45103,
+              0 0 10px #f45103;
+}
 
 
 /**************************/
