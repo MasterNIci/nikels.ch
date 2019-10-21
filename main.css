@@ -135,7 +135,8 @@ p{
   height: 150px;
   width: 100%;
   text-align: center;
-
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
 }
 span{
  margin-top: 40px;
