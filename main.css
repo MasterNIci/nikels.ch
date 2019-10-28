@@ -38,6 +38,12 @@ li{
   border: 1%;
   border-style: solid;
   background-color: white;
+  z-index: 100;
+  padding: 5px;
+}
+
+.gotop:hover{
+  background-color: grey;
 }
 
 master{
@@ -52,6 +58,7 @@ master{
   border-style: solid;
   border-radius: 18px;
   margin-bottom: 10px;
+
 }
 
 div{
@@ -109,6 +116,39 @@ h2{
 h3{
   margin: 20px;
   font-size: 16px;
+}
+h10{
+  margin: 20px;
+  font-size: 20px;
+}
+
+.linkgaming{
+  font-weight: bold;
+}
+
+.linkgaming:hover{
+  text-decoration: underline;
+}
+
+.gaming{
+  border-top:  2px solid black;
+  border-bottom: 2px solid black;
+
+}
+
+.copyright{
+    font-weight:1000;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    display: inline;
+}
+.copyrightholder{
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  display: inline;
 }
 
 p{
@@ -196,6 +236,8 @@ nici{
   animation-iteration-count: 1;
 }
 
+
+
 @keyframes herum {
  0%{
    transform: rotateY(0deg);
@@ -208,8 +250,15 @@ nici{
  }
 }
 
-nicolabuehlerbild{
- position: absolute;
+.nicolabuehlerbild{
+
+
+ background-color: white;
+ height: 300px;
+ width: 100%;
+ border-top: 2px solid black;
+ border-bottom: 2px solid black;
+ box-shadow: 0px 0px 8px #000000;
 }
 gaming{
   display: inline-block;
@@ -225,6 +274,7 @@ iframe{
 }
 
 .nicidasbild{
+  margin-top: 10px;
   border-radius: 30%;
   float: left;
   left: 10px;
@@ -240,7 +290,8 @@ iframe{
   background-color: grey;
   right: 0;
   border-radius: 15px;
-  box-shadow: 0 0 10px #5ffdff;
+  box-shadow: 0 0 10px #000000;
+  margin-top: 20px;
 }
 
 .ts3{
