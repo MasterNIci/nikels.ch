@@ -5,6 +5,9 @@
     <title>PHP Test</title>
   </head>
   <body>
+    <div class="">
+      <p>Blablabla</p>
+    </div>
     <?php echo "hallo" ?>
   </body>
 </html>
