@@ -386,6 +386,29 @@ iframe{
               0 0 10px #f45103;
 }
 
+.datamasterimp {
+  display: inline-block;
+  background-color: rgba(59, 0, 239, 0.80);
+  width: 100%;
+  border-top: solid 2px #222222;
+}
+.mydimp{
+  width: 50%;
+  height: 20px;
+}
+
+.myimp{
+  width: 50%;
+  height: 20px;
+}
+
+.impdeko{
+  width: 100%;
+  float: left;
+  display: inline-flex;
+}
+
+
 
 /**************************/
 /* Die Aufläsungen        */
