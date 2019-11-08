@@ -7,32 +7,46 @@
 
   </head>
   <script type="text/javascript">
+
+  let klickwert = 1;
+  let kostenshop1 = 20;
+
     function thegame(){
-      var machewas = document.querySelector("punktemachenplus");
-      var klickwert = 1;
-      var akwert = 2;
-      test = klickwert + akwert;
-     //machewas = klickwert;
-     document.querySelector("punktemachenplus p").innerHTML = this.test;
+      let akwert = document.getElementById("punktemachenplus").innerHTML;
+      let erg = parseFloat(klickwert) + parseFloat(akwert);
+      document.getElementById("punktemachenplus").innerHTML = (erg);
+
+      //update funktion machen
+      document.getElementById("ausgabeklickwert").innerHTML = ("Klickwert Multiplikator: "+klickwert);
+
+}
 
 
+  function shop1(){
+  
+    document.getElementById("kostenshop1").innerHTML = ("Kosten: "+kostenshop1);
+  }
 
-    }
+
   </script>
   <body>
     <div class="oben">
       <div class="punkte">
           <div class="punkteausgabe">
-            <p id="punktemachenplus" value="0"></p>
+            <p id="punktemachenplus">0</p>
           </div>
       </div>
       <div class="buttonholder">
-        <button class="buttonmaster" type="button" name="punkteplus" title="Test" onclick="thegame()">Test</button>
+        <button class="buttonmaster" type="button" onclick="thegame()">Nicis Generieren</button>
+      </div>
+      <div class="stats">
+        <div id="ausgabeklickwert">Klickwert Multiplikator:</div>
       </div>
     </div>
 
     <div class="shop">
-
+      <button type="button" name="button" onclick="shop1()">Nici Kilck verbessern</button>
+      <div id="kostenshop1">Kosten: 0</div>
     </div>
     <div class="erungenschaften">
 

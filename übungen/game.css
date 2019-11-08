@@ -18,7 +18,7 @@ body{
   bottom: 25%;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: purple;
 }
 
 .erungenschaften{
@@ -33,4 +33,13 @@ body{
 .buttonmaster{
   height: 300px;
   width: 300px;
+}
+
+.stats{
+  position: absolute;
+  right: 0;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  background-color: yellow;
 }
