@@ -13,6 +13,7 @@ body{
 }
 
 .shop{
+  display: flex;
   position: fixed;
   height: 25%;
   bottom: 25%;
@@ -36,10 +37,15 @@ body{
 }
 
 .stats{
+  display: flex;
   position: absolute;
   right: 0;
   left: 50%;
   top: 0;
   height: 100%;
   background-color: yellow;
+}
+
+.shopbuttons {
+  height: 50px;
 }

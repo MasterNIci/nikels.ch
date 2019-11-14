@@ -3,33 +3,90 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="game.css">
+    <script language="javascript" type="text/javascript" src="gamejs.js"></script>
     <title>Nikels Klicker</title>
 
   </head>
   <script type="text/javascript">
 
-  let klickwert = 1;
-  let kostenshop1 = 20;
+setInterval( autoklick, 3000);
+
+    function autoklick(){
+    let akwert = document.getElementById("punktemachenplus").innerHTML;
+    let erg = parseFloat(1) + parseFloat(akwert);
+    document.getElementById("punktemachenplus").innerHTML = (erg);
+    }
 
     function thegame(){
+
       let akwert = document.getElementById("punktemachenplus").innerHTML;
-      let erg = parseFloat(klickwert) + parseFloat(akwert);
+      let wertmulti = document.getElementById("ausgabeklickwert").innerHTML;
+      let erg = parseFloat(wertmulti) + parseFloat(akwert);
       document.getElementById("punktemachenplus").innerHTML = (erg);
 
       //update funktion machen
-      document.getElementById("ausgabeklickwert").innerHTML = ("Klickwert Multiplikator: "+klickwert);
+
 
 }
 
 
   function shop1(){
-  
-    document.getElementById("kostenshop1").innerHTML = ("Kosten: "+kostenshop1);
+    let kostenshop1 = 20;
+    let akwert = document.getElementById("punktemachenplus").innerHTML;
+    document.getElementById("kostenshop1").innerHTML = (kostenshop1);
+    let wert  = document.getElementById("ausgabeklickwert").innerHTML;
+
+    if(akwert >= kostenshop1){
+      let erg =  parseFloat(akwert) - parseFloat(kostenshop1);
+      let kilckmultiplikatormachenplus = parseFloat(1) + parseFloat(wert);
+
+      document.getElementById("punktemachenplus").innerHTML = (erg);
+      document.getElementById("ausgabeklickwert").innerHTML = (kilckmultiplikatormachenplus);
+      document.getElementById("errorwert").innerHTML = ("-");
+    } else {
+      document.getElementById("errorwert").innerHTML = ("Nicht Genug Geld");
+    }
   }
+  
+  //Coockie Test
+  function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+  function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
 
 
   </script>
-  <body>
+  <body onload="checkCookie()">
     <div class="oben">
       <div class="punkte">
           <div class="punkteausgabe">
@@ -40,14 +97,20 @@
         <button class="buttonmaster" type="button" onclick="thegame()">Nicis Generieren</button>
       </div>
       <div class="stats">
-        <div id="ausgabeklickwert">Klickwert Multiplikator:</div>
+        <div class="errorwert"> </div>
+        <div>Klickwert Multiplikator: </div>
+        <div id="ausgabeklickwert">1</div>
       </div>
     </div>
 
     <div class="shop">
-      <button type="button" name="button" onclick="shop1()">Nici Kilck verbessern</button>
-      <div id="kostenshop1">Kosten: 0</div>
-    </div>
+      <button class="shopbuttons" type="button" name="button" onclick="shop1()">Nici Kilck verbessern</button>
+      <div>Kosten: </div>
+      <div id="kostenshop1">20</div>
+      <button class="shopbuttons" type="button" name="button" onclick="shop2()">Nici Autoklick verbessern</button>
+      <div>Kosten: </div>
+      <div id="kostenshop2">1000</div>
+      </div>
     <div class="erungenschaften">
 
     </div>
