@@ -408,7 +408,91 @@ iframe{
   display: inline-flex;
 }
 
+/* CUBE */
+.cubemain {
+  padding-top: 25px;
+  display: flex;
+  width: 277px;
+  height: 200px;
+  margin: 80px;
+  perspective: 400px;
+      padding-left: 62px;
+}
+.cube {
+  display: inline;
+  animation-name: movecube;
+  animation-delay: 0s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
 
+.cube_test {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(105, 223, 1, 1);
+  border-shadow: 0 0 2px 1 rgba(105, 223, 1, 1);
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+}
+
+
+.cube_test:nth-child(1) { transform: rotateY(  0deg) translateZ(100px);
+  background-color: black;
+ }
+.cube_test:nth-child(2) { transform: rotateY( 90deg) translateZ(100px);
+  background-color: green;
+}
+.cube_test:nth-child(3) { transform: rotateY(180deg) translateZ(100px);
+  background-color: red;
+}
+.cube_test:nth-child(4) { transform: rotateY(-90deg) translateZ(100px);
+  background-color: purple;
+}
+.cube_test:nth-child(5) { transform: rotateX( 90deg) translateZ(100px);
+ background-color: grey;
+}
+.cube_test:nth-child(6) { transform: rotateX(-90deg) translateZ(100px);
+  background-color: yellow;
+ }
+
+
+
+label { margin-right: 10px; }
+
+@keyframes movecube {
+  0% {
+      transform: rotate3d(1, 1, 1, 360deg);
+  }
+  25%{
+    transform: rotate3d(0, 1, 0.5, 2.5rad);
+  }
+
+  50%{
+    transform: rotate3d(-80, 1, 0, 180deg);
+  }
+
+  75%{
+    transform: rotate3d(2, -1, -1, -0.2turn);
+  }
+
+  80%{
+    transform: rotate3d(7, 360, 4, -0.55turn);
+  }
+
+  100% {
+      transform: rotate3d(1, 1, 1, 45deg);
+}
 
 /**************************/
 /* Die Aufläsungen        */

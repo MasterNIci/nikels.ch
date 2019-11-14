@@ -47,9 +47,9 @@ setInterval( autoklick, 3000);
       document.getElementById("errorwert").innerHTML = ("Nicht Genug Geld");
     }
   }
-  
+
   //Coockie Test
-  function setCookie(cname,cvalue,exdays) {
+  function setCookie(cname,cvalue,exdays, akmoneywert, akmulltiplikator) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires=" + d.toGMTString();
@@ -75,9 +75,9 @@ function getCookie(cname) {
   function checkCookie() {
   var user=getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    alert("Willkommen Zurück " + user);
   } else {
-     user = prompt("Please enter your name:","");
+     user = prompt("Gebe Deinen Namen Ein:","");
      if (user != "" && user != null) {
        setCookie("username", user, 30);
      }
