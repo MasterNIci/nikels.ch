@@ -48,6 +48,7 @@ main{
 }
 
 .cube1{
+  margin-left: -5px;
   left: 5%;
   z-index: 99;
   position: fixed;
@@ -59,6 +60,7 @@ main{
   box-shadow: -5px 5px 10px #800000;
 }
 .cube2{
+  margin-right: -5px;
   top: 0;
   z-index: 99;
   position: fixed;
@@ -75,6 +77,94 @@ a:hover{
   animation-duration: 5s;
   animation-delay: 0;
   animation-iteration-count: infinite;
+}
+
+span:hover{
+  transform: translate3d(1, 1, 1, 260deg);
+  z-index: 100;
+  transform-style: preserve-3d;
+  animation-name: d3d;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /*
+  transform: translate(30px, 30px);
+  transform: translateZ(-100px);*/
+  transition: transform 1s;
+
+
+}
+
+.box{
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+
+  }
+
+.bigone{
+  transform: rotate3d(1, 1, 1, 90deg);
+  display: inline;
+  height: 20px;
+  float: left;
+}
+
+span{
+  transform: rotate3d(1, 1, 1, 180deg);
+  z-index: 0;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  margin: 1px;
+}
+
+span:hover:nth-child(1){
+
+
+}
+
+span:hover:nth-child(2){
+
+}
+
+span:hover:nth-child(3){
+  background-color: #403;
+}
+span:hover:nth-child(4){
+  background-color: #504;
+}
+span:hover:nth-child(5){
+  background-color: #605;
+}
+
+span:nth-child(1){
+  background-color: #201;
+  transform: rotate3d(1, 1, 1, 340deg);
+
+}
+
+span:nth-child(2){
+  background-color: #302;
+}
+
+span:nth-child(3){
+  background-color: #403;
+}
+span:nth-child(4){
+  background-color: #504;
+}
+span:nth-child(5){
+  background-color: #605;
+}
+
+@keyframes d3d {
+  0%{
+    transform: rotate3d(1, 1, 1, 260deg);
+  }
+  100%{
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
 }
 
 @keyframes flakern {
