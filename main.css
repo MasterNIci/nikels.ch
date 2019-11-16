@@ -466,9 +466,40 @@ iframe{
   background-color: yellow;
  }
 
-
-
 label { margin-right: 10px; }
+
+.klavierholder{
+  transform: translateZ(100px) rotateX(-45deg);
+  width: 400px;
+  display: flex;
+  padding: 1px;
+  border: solid 5px #000;
+  margin-left: 1px;
+}
+.klatasten{
+  transform: translateZ(100px)rotateX(328deg);
+  width: 20px;
+  height: 50px;
+  border: solid 2px #000;
+  float: left;
+  margin-left: 1px;
+  margin-right: 1px;
+  border-bottom: solid 14px;
+}
+.klatasten:hover{
+  animation-name: tastendruck;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tastendruck {
+  100%{
+  margin-top: 5px;
+  transform: translateZ(100px) rotateX(365deg);
+  border-bottom: solid 2px;
+  }
+}
 
 @keyframes movecube {
   0% {
