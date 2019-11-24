@@ -654,7 +654,9 @@ label { margin-right: 10px; }
 }
 
 @media (min-width: 1025px ) and (max-width: 1440px) {
-
+.nicolabuehlerbild{
+  height: 375px;
+}
 }
 
 @media (min-width: 1441px ) and (max-width: 2560px) {
