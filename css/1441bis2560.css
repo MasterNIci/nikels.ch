@@ -1,3 +1,48 @@
 @media (min-width: 1441px ) and (max-width: 2560px) {
+  h1{
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+  .amenu{
+    font-size: 25px;
+    padding: 25px;
+  }
+  li{
+    margin: 40px;
+    margin-top: 56px;
+  }
+
+  .logo{
+    width: 195px;
+    height: 100px;
+  }
+
+  .imganimation {
+      height: 100px;
+      width: 100px;
+    }
+
+.masterfooter {
+    height: 200px;
+}
+
+  span{
+    width: 100%;
+    display: inline-block;
+    margin-top: 35px;
+  }
+
+  nici{
+    font-size: 25px;
+  }
+
+  .nicolabuehlerbild{
+    height: 440px;
+  }
+
 
 }
