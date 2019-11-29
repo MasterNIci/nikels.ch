@@ -526,6 +526,38 @@ label { margin-right: 10px; }
 }
 }
 /**************************/
-/* Die Aufläsungen        */
+/* Werbung       */
 /* Verschobern css Ordner */
 /**************************/
+
+.werbung1{
+  position: fixed;
+  left: 0;
+  top: 20%;
+  height: 100px;
+  width: 20px;
+}
+
+.werbung2{
+  position: fixed;
+  left: 0;
+  bottom: 20%;
+  height: 100px;
+  width: 20px;
+}
+
+.werbung3{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  height: 100px;
+  width: 20px;
+}
+
+.werbung4 {
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  height: 100px;
+  width: 20px;
+}
