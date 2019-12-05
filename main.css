@@ -13,7 +13,7 @@ body{
 
 nav{
   z-index: 1;
-  text-align: center;
+  text-align: absolute;
   position: fixed;
   top:0;
   left: 50%;
