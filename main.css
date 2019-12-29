@@ -44,6 +44,7 @@ li.dropdown {
 
 .dropdown-content {
   display: none;
+  border: 0.1px solid black;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
