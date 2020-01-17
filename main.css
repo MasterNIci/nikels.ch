@@ -35,7 +35,7 @@ li a, .amenu {
 }
 
 li a:hover, .dropdown:hover .amenu {
-  background-color: red;
+  background-color: black;
 }
 
 li.dropdown {
@@ -126,7 +126,7 @@ a:hover{
   z-index: 1;
   font-size: 20px;
   text-decoration: none;
-  background-color: #ab0000;
+  background-color: white;
   color: black;
   margin: 1px;
   padding: 10px;
