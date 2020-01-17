@@ -1,3 +1,11 @@
+navhandy{
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
 body{
 
   left: 0;
@@ -62,7 +70,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  
+
   background-color: black;
 }
 
