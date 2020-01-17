@@ -138,7 +138,7 @@ a:hover{
 .amenu:hover{
   transition-delay:0.1s;
   background-color: black;
-  color: white;
+  color: grey;
   text-decoration: none;
   border-color: white;
   border: 1%;
