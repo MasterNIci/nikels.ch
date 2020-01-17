@@ -36,6 +36,7 @@ li a, .amenu {
 
 li a:hover, .dropdown:hover .amenu {
   background-color: black;
+  color: white;
 }
 
 li.dropdown {
@@ -138,7 +139,7 @@ a:hover{
 .amenu:hover{
   transition-delay:0.1s;
   background-color: black;
-  color: grey;
+  color: white;
   text-decoration: none;
   border-color: white;
   border: 1%;
